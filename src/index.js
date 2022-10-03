@@ -1,15 +1,17 @@
 const img = document.getElementById('img')
 const imgs = document.querySelectorAll('#img img')
-const WidthImg = imgs[0].clientHeight
-var indx = 0
+var indx = imgs.length -1
 
 function carrossel(){
-    indx++
-    if(indx > imgs.length -1){
-        indx = 0
+    imgs[indx].classList.add('invisible')
+    indx--   
+    if(indx < 0){
+        indx = imgs.length - 1
+        imgs.forEach(element => {
+            element.classList.remove('invisible')
+        })
     }
-    img.style.transform = `translateY(${-indx * WidthImg}px)`; 
-    console.log(WidthImg)
+
 }
 
-setInterval(carrossel, 1800)
+setInterval(carrossel, 4000)
