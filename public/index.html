@@ -5,26 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skate</title>
+    <script src="https://kit.fontawesome.com/6a6ae047b2.js" crossorigin="anonymous"></script>
     <link href="../src/style/style.css" rel="stylesheet">
     <link href="../src/style/view.css" rel="stylesheet">
 </head>
 <body>
     <section class="conteinerMax">
             <section class="menu-conteiner">
+                <div class="pesqui-btn">
+                    <label for="btn">
+                        <i class="fa-solid fa-bars" id="icone"></i>
+                    </label>
+                    <input type='checkbox' id="btn">
+
+                    <div class="pesquisa">
+                        <input type="text" placeholder="Pesquise algo">
+                    </div>
+                </div>
+
                 <nav class="menu-h">
                     <ul>
-                        <li><a href="#">MARCA</a></li>
+                        <li id="marca"><a href="#">MARCA</a></li>
                         <li><a href="#">CATEGORIA</a></li>
                         <li><a href="#">CARRINHO</a></a></li>
-                        <div class="pesquisa">
-                            <input type="text" placeholder="Pesquise algo">
-                        </div>
                         <li id="li"><a href="#">PERFIL</a></li>
-                        <li><a href="#">CONFIGURAÇÃO</a></li>
                     </ul>
                 </nav>
 
-                
             </section>
             
             <section class="carrossel">

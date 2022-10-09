@@ -1,0 +1,39 @@
+@media (max-width: 900px){
+    .menu-conteiner{
+        grid-area: img;
+        z-index: 1;
+    }
+    .menu-h{
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    .menu-h ul{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    #li{
+        margin-left: 0;
+    }
+    .fa-solid.fa-bars{
+        display: block;
+        padding: 15px;
+        transition: all 2s;
+    }
+
+    .pesqui-btn{
+       position: relative;
+       height: 15%;
+       z-index: 2;
+    }
+
+    .carrossel{
+        height: 300px;
+    }
+    .move{
+        transform: translateX(0);
+    }
+  
+}
