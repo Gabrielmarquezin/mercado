@@ -1,0 +1,25 @@
+.carrossel{grid-area: img;}
+
+.carrossel{
+    height: 450px;
+    width: 100%;   
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.imagens img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 800ms;
+}
+
+.invisible{
+    opacity: 0;
+}
