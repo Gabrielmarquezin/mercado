@@ -3,8 +3,7 @@
         flex-direction: column;
         grid-area: img;
         z-index: 1;
-        justify-content: flex-start;
-        height: 40vh;
+        height: 45vh;
     }
 
     #logo{
