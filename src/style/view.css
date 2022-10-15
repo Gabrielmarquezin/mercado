@@ -3,7 +3,8 @@
         flex-direction: column;
         grid-area: img;
         z-index: 1;
-        height: 45vh;
+        justify-content: flex-start;
+        height: 40vh;
     }
 
     #logo{
@@ -19,11 +20,15 @@
    
    .menu-h ul{
      flex-direction: column;
+     
    }
    .barra{
     display: block;
     position: absolute;
     right: 5%;
     margin-top: 24px;
+   }
+   .menu-h{
+    background-color: rgb(14, 13, 13);
    }
 }
